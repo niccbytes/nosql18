@@ -1,13 +1,8 @@
-// Example index.js content
-const express = require('express');
-const router = express.Router();
+const router = require('express').Router();
+const apiRoutes = require('./api');
 
-// Import other route modules
-const userRoutes = require('../routes/api/userRoutes');
-const thoughtRoutes = require('../routes/api/thoughtRoutes');
+router.use('/api', apiRoutes);
 
-// Use the imported routes
-router.use('/users', userRoutes);
-router.use('/thoughts', thoughtRoutes);
+router.use((req, res) => res.send('Wrong route!'));
 
 module.exports = router;
