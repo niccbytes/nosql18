@@ -27,4 +27,7 @@ Welcome to the Social Media API, a back-end solution for your social network. Th
 
 ## Repo
 https://github.com/niccbytes/nosql18
+
+## youtube link
+https://youtu.be/jEdupO0vTus
  
